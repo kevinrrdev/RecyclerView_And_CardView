@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     datosEnvio.putString("POKEMON_NAME",objPokemon.getNombre());
                     datosEnvio.putString("POKEMON_TYPE",objPokemon.getTipo());
                     datosEnvio.putInt("POKEMON_IMAGE",objPokemon.getImgPokemon());
+
                     Intent iPokemon= new Intent(MainActivity.this, PokemonActivity.class);
                     iPokemon.putExtras(datosEnvio);
                     startActivity(iPokemon);
